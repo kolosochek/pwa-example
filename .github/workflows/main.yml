@@ -18,13 +18,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Webpack Build
+      - name: Vite Build
         run: npm run build --publicPath=${{ github.event.repository.name }}
+
+      - name: Redirect 404 to Index for SPA
+        run: cp dist/index.html dist/404.html
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: build/
+          path: dist/
 
   deploy:
     needs: build
