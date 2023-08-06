@@ -1,4 +1,4 @@
-name: Deploy PWA Starter to GitHub Pages
+name: Deploy PWA to GitHub Pages
 
 on:
   workflow_dispatch:
@@ -18,14 +18,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Replace Paths in Manifest
-        run: sed -i 's@"/"@"/${{ github.event.repository.name }}/"@g' ./public/manifest.json && cat ./public/manifest.json
-
       - name: Webpack Build
         run: npm run build -- --base=${{ github.event.repository.name }}
-
-      - name: Redirect 404 to Index for SPA
-        run: cp build/index.html build/404.html
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
