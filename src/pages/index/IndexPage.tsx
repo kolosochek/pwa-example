@@ -20,7 +20,7 @@ export const IndexPage = () => {
                         </form>
                     </Box>
                     <Box component={"footer"} className="b-footer">
-                        <input type="file" accept="image/*" capture="camera" />
+                        <input type="file" accept="image/*" capture="environment" />
                     </Box>
                 </Grid>
             </Grid>

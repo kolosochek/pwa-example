@@ -1,14 +1,14 @@
 {
   "id": "/",
   "scope": "/",
-  "name": "MyCopmany",
-  "short_name": "MyCopmany 0.1",
+  "name": "MyCompany v0.1",
+  "short_name": "mycompany",
   "start_url": "/?fullscreen=true",
   "display": "fullscreen",
-  "theme_color": "#1f1f1f",
-  "background_color": "#0ea5e9",
+  "theme_color": "#1F1F1F",
+  "background_color": "#0EA5E9",
   "description": "CRM application with a lot of nice and smooth features",
-  "orientation": "any",
+  "orientation": "portrait",
   "dir": "auto",
   "lang": "en",
   "related_applications": [],
@@ -63,7 +63,7 @@
   "widgets": [
     {
       "name": "Starter Widget",
-      "tag": "starterWidget",
+      "tag": "mycompanyWidget",
       "ms_ac_template": "widget/ac.json",
       "data": "widget/data.json",
       "description": "A simple widget example from pwa-starter.",
