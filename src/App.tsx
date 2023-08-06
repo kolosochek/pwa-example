@@ -18,7 +18,7 @@ function getTheme():ThemeOptions {
 }
 
 function App() {
-    const theme = createTheme()
+    const theme = createTheme(getTheme())
   return (
       <Router>
           <ThemeProvider theme={theme}>
