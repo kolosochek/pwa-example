@@ -1,9 +1,10 @@
 import {Box, Button, FormGroup, Grid, TextField} from "@mui/material";
 import logo from "../../logo.svg";
 import React from "react";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const IndexPage = () => {
+    const navigate = useNavigate()
     return (
         <Box className="b-app-wrapper">
             <Grid container className="b-app">
@@ -16,7 +17,7 @@ export const IndexPage = () => {
                             <FormGroup>
                                 <TextField label={"Username"} />
                                 <TextField label={"Password"} />
-                                <Button onClick={() => { return redirect('/about')}}>Log in</Button>
+                                <Button onClick={() => { navigate('/about')}}>Log in</Button>
                             </FormGroup>
                         </form>
                     </Box>
