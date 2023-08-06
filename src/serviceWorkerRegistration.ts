@@ -54,6 +54,8 @@ export function register(config?: Config) {
         registerValidSW(swUrl, config);
       }
     });
+
+    window.addEventListener('installable', () => {});
   }
 }
 
