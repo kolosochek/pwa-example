@@ -18,9 +18,9 @@ self.addEventListener('widgetresume', (event) => {
 // When the user clicks an element with an associated Action.Execute,
 // handle according to the 'verb' in event.action.
 self.addEventListener('widgetclick', (event) => {
-if (event.action == "updateName") {
-    event.waitUntil(updateName(event));
-}
+    if (event.action == "updateName") {
+        event.waitUntil(updateName(event));
+    }
 });
 
 // When the widget is uninstalled/unpinned, clean up any unnecessary
