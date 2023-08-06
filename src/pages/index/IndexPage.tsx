@@ -1,10 +1,8 @@
 import {Box, Button, FormGroup, Grid, TextField} from "@mui/material";
 import logo from "../../logo.svg";
-import React, {useCallback} from "react";
-import {useNavigate} from 'react-router-dom';
+import React from "react";
 
 export const IndexPage = () => {
-    const navigator = useNavigate()
     return (
         <Box className="b-app-wrapper">
             <Grid container className="b-app">
@@ -17,7 +15,7 @@ export const IndexPage = () => {
                             <FormGroup>
                                 <TextField label={"Username"} />
                                 <TextField label={"Password"} />
-                                <Button onClick={() => {navigator("/about")}}>Log in</Button>
+                                <Button onClick={() => {}}>Log in</Button>
                             </FormGroup>
                         </form>
                     </Box>
