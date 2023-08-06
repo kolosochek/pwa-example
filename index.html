@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/" />
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="/logo192.png" />
+    <title>PWA Starter</title>
+
+    <base href="/" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+    <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
     <meta name="viewport"
           content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <meta name="description" content="This is a PWA Starter app" />
@@ -16,13 +18,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="PWA Starter" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
+    <!-- This tag is used by the PWA Starter CLI to identify template projects. Don't remove if you are using the CLI. -->
+    <meta name="pwa-starter-template-identity" content="pwa-starter"/>
+
+    <!-- Imports an icon to represent the document. -->
+    <link rel="icon" href="/assets/icons/icon_24.png" type="image/png" />
+
+    <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
     <link rel="manifest" href="/manifest.json" />
     <script type="module" src="/src/index.tsx"></script>
-    <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
