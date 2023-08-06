@@ -1,9 +1,8 @@
 {
   "id": "/",
-  "scope": "/",
   "name": "MyCompany v0.1",
   "short_name": "mycompany",
-  "start_url": ".",
+  "start_url": "/",
   "display": "fullscreen",
   "theme_color": "#0EA5E9",
   "background_color": "#1F1F1F",
