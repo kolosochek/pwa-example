@@ -15,7 +15,7 @@ export const IndexPage = () => {
                             <FormGroup>
                                 <TextField label={"Username"} />
                                 <TextField label={"Password"} />
-                                <Button type="submit">Log in</Button>
+                                <Button onClick={() => {}}>Log in</Button>
                             </FormGroup>
                         </form>
                     </Box>
