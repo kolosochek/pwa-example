@@ -1,5 +1,6 @@
 {
   "id": "/",
+  "scope": "/",
   "name": "MyCompany v0.1",
   "short_name": "mycompany",
   "start_url": "/",

@@ -24,8 +24,8 @@ function App() {
           <ThemeProvider theme={theme}>
               <CssBaseline>
                   <Routes>
-                      <Route path="/" element={<IndexPage />} />
                       <Route path="/about" element={<AboutPage />} />
+                      <Route path="*" element={<IndexPage />} />
                   </Routes>
               </CssBaseline>
           </ThemeProvider>
