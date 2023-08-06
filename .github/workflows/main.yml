@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Vite Build
-        run: npm run build --publicPath=${{ github.event.repository.name }}
+        run: npm run build -- --base=${{ github.event.repository.name }}
 
       - name: Redirect 404 to Index for SPA
         run: cp dist/index.html dist/404.html
