@@ -2,7 +2,7 @@
   "id": "/",
   "scope": "/",
   "name": "MyCompany v0.1",
-  "short_name": "mycompany",
+  "short_name": "starter",
   "start_url": "/",
   "display": "fullscreen",
   "theme_color": "#0EA5E9",
@@ -63,7 +63,7 @@
   "widgets": [
     {
       "name": "Starter Widget",
-      "tag": "mycompanyWidget",
+      "tag": "starterWidget",
       "ms_ac_template": "widget/ac.json",
       "data": "widget/data.json",
       "description": "A simple widget example from pwa-starter.",
