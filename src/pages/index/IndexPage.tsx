@@ -1,13 +1,8 @@
 import {Box, Button, FormGroup, Grid, TextField} from "@mui/material";
 import logo from "../../logo.svg";
 import React, {useCallback} from "react";
-import {useNavigate} from "react-router-dom";
 
 export const IndexPage = () => {
-    const navigator = useNavigate()
-    const handleFormSubmit = useCallback(() => {
-        navigator("/about")
-    }, [])
     return (
         <Box className="b-app-wrapper">
             <Grid container className="b-app">
@@ -16,11 +11,11 @@ export const IndexPage = () => {
                         <img src={logo} alt={"app logo"}  height={200} />
                     </Box>
                     <Box component={"main"} className="b-main">
-                        <form>
+                        <form action="/about" method="GET">
                             <FormGroup>
                                 <TextField label={"Username"} />
                                 <TextField label={"Password"} />
-                                <Button onClick={handleFormSubmit}>Log in</Button>
+                                <Button type="submit">Log in</Button>
                             </FormGroup>
                         </form>
                     </Box>
