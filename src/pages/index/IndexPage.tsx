@@ -1,6 +1,7 @@
 import {Box, Button, FormGroup, Grid, TextField} from "@mui/material";
 import logo from "../../logo.svg";
 import React from "react";
+import { redirect } from "react-router-dom";
 
 export const IndexPage = () => {
     return (
@@ -15,7 +16,7 @@ export const IndexPage = () => {
                             <FormGroup>
                                 <TextField label={"Username"} />
                                 <TextField label={"Password"} />
-                                <Button onClick={() => {}}>Log in</Button>
+                                <Button onClick={() => { return redirect('/about')}}>Log in</Button>
                             </FormGroup>
                         </form>
                     </Box>
