@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Webpack Build
-        run: npm run build -- --base=${{ github.event.repository.name }}
+        run: npm run build --publicPath=${{ github.event.repository.name }}
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
